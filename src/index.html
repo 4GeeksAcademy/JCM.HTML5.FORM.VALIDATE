@@ -23,16 +23,15 @@
     <div class="container-fluid">
       <form id="Formulario">
         <div class="card mt-3">
-          <div class="card-header fw-bold fs-3">
+          <div class="card-header fw-bold fs-3" id="head">
             Payment Form Example
           </div>
-
+          
           <div class="card-body">
             <div class="row g-3">
-              <div class="alert alert-danger" role="alert">
-                Some Fields are missing.
+              <div class="alert alert-danger mt-0 d-none" role="alert" id="alarm">
+             Some Fields are missing.
               </div>
-
               <div class="col-md-5">
                 <label for="InputCardn" class="form-label">Card#</label>
                 <input
