@@ -1,129 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Form / DAY 2 PM</title>
+    <meta name="vieport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Form / DAY 2 PM</title>
-  <meta name="vieport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-</head>
+  <body>
+    <div class="container-fluid">
+      <form id="Formulario">
+        <div class="card mt-3">
+          <div class="card-header fw-bold fs-3">
+            Payment Form Example
+          </div>
 
-<body>
-  
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="alert alert-danger" role="alert">
+                Some Fields are missing.
+              </div>
 
-  <div class="container-fluid">
+              <div class="col-md-5">
+                <label for="InputCardn" class="form-label">Card#</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="InputCardn"
+                  placeholder="XXXXXXXXXXX"
+                  value="34"
+                />
+              </div>
+              <div class="col-md-3">
+                <label for="InputCardCvc" class="form-label">CVC#</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="InputCardCvc"
+                  placeholder="0000"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputAmount" class="form-label">Amount</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon3">$</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAmount"
+                    aria-describedby="basic-addon3 basic-addon4"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="inputFirstName" class="form-label"
+                  >First Name</label
+                >
+                <input type="text" class="form-control" id="inputFirstName" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputLasttName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" />
+              </div>
+              <div class="col-md-7">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-2">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Pick a State</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputPostalCode" class="form-label"
+                  >Postal Code</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputPostalCode"
+                />
+              </div>
 
-    <div class="card mt-3">
+              <div class="col-md-6">
+                We Accept:
+                <div class="col-4 mt-2 bg-secondary rounded">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="mastercard"
+                      name="inlineRadioOptions"
+                    />
+                    <label class="form-check-label" for="mastercard"
+                      ><i class="fa-brands fa-cc-mastercard"></i>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="Americancard"
+                      name="inlineRadioOptions"
+                    />
+                    <label class="form-check-label" for="Americancard"
+                      ><i class="fa-brands fa-cc-amex"></i>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="Visacard"
+                      name="inlineRadioOptions"
+                    />
+                    <label class="form-check-label" for="Visacard"
+                      ><i class="fa-brands fa-cc-visa"></i>
+                    </label>
+                  </div>
 
-      <div class="card-header fw-bold fs-3">
-        Payment Form Example
-      </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="Paypalcard"
+                      name="inlineRadioOptions"
+                    />
+                    <label class="form-check-label" for="Paypalcard"
+                      ><i class="fa-brands fa-cc-paypal"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
 
-
-
-      <div class="card-body">
-        <div class="alert alert-danger" role="alert">
-          Some Fields are missing.
+              <div class="col-md-6">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <div id="MessageHelpBlock" class="form-text">
+                  Add any note here.
+                </div>
+              </div>
+            </div>
+            </div>
+            <div
+              class="card-footer d-grid gap-2 d-md-flex justify-content-md-end"
+            >
+              <button class="btn btn-secondary me-md-2" type="reset">
+                Cancel
+              </button>
+              <button class="btn btn-primary" type="submit" id="sendbtn">
+                Send
+              </button>
+            </div>
+          </div>
         </div>
-        <form class="row g-3" name="Formulario">
-          <div class="col-md-5">
-            <label for="inputCardn" class="form-label">Card#</label>
-            <input type="number" class="form-control" id="inputCardn" placeholder="XXXXXXXXXXX" value="34">
-          </div>
-          <div class="col-md-3">
-            <label for="InputCardCvc" class="form-label">CVC#</label>
-            <input type="number" class="form-control" id="InputCardCvc" placeholder="0000">
-          </div>
-          <div class="col-md-4">
-
-            <label for="inputAmount" class="form-label">Amount</label>
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon3">$</span>
-              <input type="text" class="form-control" id="inputAmount" aria-describedby="basic-addon3 basic-addon4">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="inputFirstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="inputFirstName">
-          </div>
-          <div class="col-md-6">
-            <label for="inputLasttName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="inputLastName">
-          </div>
-          <div class="col-md-7">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-2">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Pick a State</option>
-              <option>...</option>
-            </select>
-
-          </div>
-          <div class="col-md-3">
-            <label for="inputPostalCode" class="form-label">Postal Code</label>
-            <input type="number" class="form-control" id="inputPostalCode">
-          </div>
-
-          <div class="col-md-6">
-            We Accept:
-            <div class="col-4 mt-2 bg-secondary rounded">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="mastercard" name="inlineRadioOptions">
-              <label class="form-check-label" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i>
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="Americancard" name="inlineRadioOptions">
-              <label class="form-check-label" for="Americancard"><i class="fa-brands fa-cc-amex"></i>
-              </label>
-            </div>
-              <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="Visacard" name="inlineRadioOptions">
-              <label class="form-check-label" for="Visacard"><i class="fa-brands fa-cc-visa"></i>
-              </label>
-            </div>
-
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="Paypalcard" name="inlineRadioOptions">
-              <label class="form-check-label" for="Paypalcard"><i class="fa-brands fa-cc-paypal"></i>
-              </label>
-            </div>
-
-            </div>
-            </div>
-          
-
-          <div class="col-md-6">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <div id="MessageHelpBlock" class="form-text">
-              Add any note here.
-            </div>
-          </div>
-
-        </form>
-      </div>
-      <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-        
-          <button class="btn btn-secondary me-md-2" type="reset">Cancel</button>
-          <button class="btn btn-primary" type="submit" id="sendbtn">Send</button>
-        </div>
-      </div>
+      </form>
     </div>
 
-
-  </div>
-
-        <script src="src/app.js"></script>
- 
-</body>
-
+    <script src="src/app.js"></script>
+  </body>
 </html>
