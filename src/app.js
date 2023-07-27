@@ -1,9 +1,6 @@
-/* eslint-disable */
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-
-  function saludar() {
-    alert("Hola desde el Evento Click");
-  }
-};
+function saludar() {
+  console.log("Prueba");
+  alert("Hola desde el Evento Click");
+}
+var captura = document.getElementById("sendbtn");
+captura.addEventListener("click", saludar);
