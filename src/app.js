@@ -2,7 +2,7 @@ let Formulario = document.querySelector("#Formulario");
 
 Formulario.addEventListener("submit", evento => {
   evento.preventDefault();
-  console.log("Validando");
+
   let InputCardn = document.querySelector("#InputCardn");
   let InputCardCvc = document.querySelector("#InputCardCvc");
   let inputAmount = document.querySelector("#inputAmount");
@@ -23,41 +23,50 @@ Formulario.addEventListener("submit", evento => {
   let Error8 = "";
 
   if (InputCardn.value !== "" && !isNaN(InputCardn.value)) {
+    ("");
   } else {
     Error1 = "Card Number";
     InputCardn.style.backgroundColor = "#f1aeb5";
   }
   if (InputCardCvc.value !== "" && !isNaN(InputCardCvc.value)) {
+    ("");
   } else {
     Error2 = "Card CVC";
     InputCardCvc.style.backgroundColor = "#f1aeb5";
   }
   if (inputAmount.value !== "" && !isNaN(inputAmount.value)) {
+    ("");
   } else {
     Error3 = "Amount";
     inputAmount.style.backgroundColor = "#f1aeb5";
   }
   if (inputFirstName.value !== "" && typeof inputFirstName.value === "string") {
+    ("");
   } else {
     Error4 = "First Name";
     inputFirstName.style.backgroundColor = "#f1aeb5";
+    ("");
   }
   if (inputLastName.value !== "" && typeof inputLastName.value === "string") {
+    ("");
   } else {
     Error5 = "Last Name";
     inputLastName.style.backgroundColor = "#f1aeb5";
   }
   if (inputCity.value !== "" && typeof inputCity.value === "string") {
+    ("");
   } else {
     Error6 = "City";
     inputCity.style.backgroundColor = "#f1aeb5";
   }
   if (inputState.value !== "" && typeof inputState.value === "string") {
+    ("");
   } else {
     Error7 = "State";
     inputState.style.backgroundColor = "#f1aeb5";
   }
   if (inputPostalCode.value !== "" && !isNaN(inputPostalCode.value)) {
+    ("");
   } else {
     Error8 = "Postal Code";
     inputPostalCode.style.backgroundColor = "#f1aeb5";
